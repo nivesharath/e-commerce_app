@@ -1,6 +1,6 @@
 README.md
 
-# E-Commerce Database Management System (Team-24)
+# E-Commerce Database Management System
 
 **Project Overview**
 
@@ -15,14 +15,6 @@ This project creates a relational database for an E-Commerce platform, based on 
 - Support complex queries and optimize query performance.
 
 - The database supports both querying and updating operations.
-
-**Team Members**
-
-Vaibhav Vinay Ranashoor
-
-Mahmood Ali Khan
-
-Nivedhithaa Karunanidhi
 
 **Files Provided**
 
@@ -86,7 +78,7 @@ order_reviews
 
 **Kaggle:** Brazilian E-Commerce Public Dataset by Olist
 
-**Example Queries (Provided in Report)**
+**Example Queries**
 
 - Aggregate orders by status
 
@@ -104,11 +96,46 @@ Solved by creating targeted indexes and using EXPLAIN ANALYZE for query planning
 
 Recommended partitioning and materialized views for very large tables.
 
+**Repository Structure**
+
+├── data/                     # Raw dataset (Kaggle Olist E-Commerce)
+
+│   ├── customers.csv
+
+│   ├── orders.csv
+
+│   ├── products.csv
+
+│   └── ...
+
+├── queries/                  # SQL queries for analysis
+
+│   ├── seller_revenue.sql
+
+│   ├── top_orders_by_freight.sql
+
+│   └── ...
+
+├── schema/                   # Database schema
+
+│   └── create_table.sql
+
+├── utils/                    # Helper functions
+
+│   └── db.py
+
+├── app.py                    # Streamlit-based web interface
+
+├── requirements.txt
+
+└── README.md
+
+
 **Bonus**
 
 Building a web interface to visualize and interact with the database.
 
-**Individual Contribution (Nivedhithaa Karunanidhi)**
+**Task overview**
 - Designed and implemented SQL queries for order analysis, revenue calculations, and customer insights.
   
 - Worked on database normalization (BCNF) and indexing strategies to optimize performance.
@@ -116,11 +143,6 @@ Building a web interface to visualize and interact with the database.
 - Assisted in building schema diagrams and ensuring referential integrity across tables.
 
 - Built an interactive and creative streamlit dashboard to show different results through the app.
-
-
-**Links**
-
-[Google Drive Links in Report]
 
 End of README.md
 
