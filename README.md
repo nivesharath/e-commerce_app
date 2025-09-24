@@ -1,58 +1,58 @@
 README.md
 
-E-Commerce Database Management System (Team-24)
+# E-Commerce Database Management System (Team-24)
 
-Project Overview
+**Project Overview**
 
 This project creates a relational database for an E-Commerce platform, based on the Brazilian e-commerce public dataset by Olist (sourced from Kaggle). The system manages data about customers, orders, products, sellers, reviews, payments, and geolocation.
 
-It is designed to:
+**It is designed to:**
 
-Efficiently store, update, and query large-scale e-commerce transactional data.
+- Efficiently store, update, and query large-scale e-commerce transactional data.
 
-Ensure referential integrity, data normalization (BCNF), and scalability.
+- Ensure referential integrity, data normalization (BCNF), and scalability.
 
-Support complex queries and optimize query performance.
+- Support complex queries and optimize query performance.
 
-The database supports both querying and updating operations.
+- The database supports both querying and updating operations.
 
-Team Members
+**Team Members**
 
-Vaibhav Vinay Ranashoor (UB ID: vranasho)
+Vaibhav Vinay Ranashoor
 
-Mahmood Ali Khan (UB ID: mahmood7)
+Mahmood Ali Khan
 
-Nivedhithaa Karunanidhi (UB ID: nkarunan)
+Nivedhithaa Karunanidhi
 
-Files Provided
+**Files Provided**
 
-create.sql : SQL script to create the database schema.
+### create.sql : SQL script to create the database schema.
 
-Milestone 2 Report.pdf : Detailed report describing project tasks, E/R diagrams, BCNF analysis, queries, indexing, and optimization.
+### Milestone 2 Report.pdf : Detailed report describing project tasks, E/R diagrams, BCNF analysis, queries, indexing, and optimization.
 
-How to Run
+**How to Run**
 
-Create the database:
+**Create the database:**
 
 CREATE DATABASE ecommerce_db;
 
-Execute the schema creation:
+**Execute the schema creation:**
 
 Run the create.sql script in your PostgreSQL environment (e.g., PgAdmin, psql).
 
-Load sample data:
+**Load sample data:**
 
 Manually insert small test datasets (around 10 entries per table) to debug easily.
 
 For production, load cleaned CSV data using PostgreSQL's import features.
 
-Execute queries:
+**Execute queries:**
 
 Run various SELECT, INSERT, UPDATE, DELETE queries (examples are given in the project report).
 
-Database Schema
+**Database Schema**
 
-Main Tables:
+**Main Tables:**
 
 geolocation
 
@@ -72,31 +72,31 @@ order_payments
 
 order_reviews
 
-Key Design Features
+**Key Design Features**
 
-All relations are in Boyce-Codd Normal Form (BCNF).
+- All relations are in Boyce-Codd Normal Form (BCNF).
 
-Referential integrity enforced with primary and foreign keys.
+- Referential integrity enforced with primary and foreign keys.
 
-Indexes created on foreign keys and frequently filtered columns to improve performance.
+- Indexes created on foreign keys and frequently filtered columns to improve performance.
 
-Dataset supports analytical queries like joins, subqueries, GROUP BY, and aggregations.
+- Dataset supports analytical queries like joins, subqueries, GROUP BY, and aggregations.
 
-Datasets Used
+**Datasets Used**
 
-Kaggle: Brazilian E-Commerce Public Dataset by Olist
+**Kaggle:** Brazilian E-Commerce Public Dataset by Olist
 
-Example Queries (Provided in Report)
+**Example Queries (Provided in Report)**
 
-Aggregate orders by status
+- Aggregate orders by status
 
-Find top customers by number of orders
+- Find top customers by number of orders
 
-Revenue calculation per seller
+- Revenue calculation per seller
 
-Payment analysis using subqueries
+- Payment analysis using subqueries
 
-Challenges Faced
+**Challenges Faced**
 
 Slow queries on large datasets (~600K+ rows).
 
@@ -104,9 +104,17 @@ Solved by creating targeted indexes and using EXPLAIN ANALYZE for query planning
 
 Recommended partitioning and materialized views for very large tables.
 
-Bonus
+**Bonus**
 
 Building a web interface to visualize and interact with the database.
+
+**Individual Contribution (Nivedhithaa Karunanidhi)**
+- Designed and implemented SQL queries for order analysis, revenue calculations, and customer insights.
+  
+- Worked on database normalization (BCNF) and indexing strategies to optimize performance.
+  
+- Assisted in building schema diagrams and ensuring referential integrity across tables.  
+
 
 Links
 
