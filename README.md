@@ -26,9 +26,9 @@ Nivedhithaa Karunanidhi
 
 **Files Provided**
 
-### create.sql : SQL script to create the database schema.
+**create.sql:** SQL script to create the database schema.
 
-### Milestone 2 Report.pdf : Detailed report describing project tasks, E/R diagrams, BCNF analysis, queries, indexing, and optimization.
+**Milestone 2 Report.pdf:** Detailed report describing project tasks, E/R diagrams, BCNF analysis, queries, indexing, and optimization.
 
 **How to Run**
 
@@ -113,10 +113,12 @@ Building a web interface to visualize and interact with the database.
   
 - Worked on database normalization (BCNF) and indexing strategies to optimize performance.
   
-- Assisted in building schema diagrams and ensuring referential integrity across tables.  
+- Assisted in building schema diagrams and ensuring referential integrity across tables.
+
+- Built an interactive and creative streamlit dashboard to show different results through the app.
 
 
-Links
+**Links**
 
 [Google Drive Links in Report]
 
